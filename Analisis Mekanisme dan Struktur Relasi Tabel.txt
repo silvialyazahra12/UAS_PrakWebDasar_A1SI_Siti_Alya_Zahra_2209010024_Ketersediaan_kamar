@@ -1,0 +1,27 @@
+Analisis Mekanisme dan Struktur Relasi Tabel Sistem Ketersediaan Kamar Rumah Sakit
+
+1. Analisis Mekanisme dan Struktur Relasi Tabel
+- Sistem ketersediaan kamar terdiri dari empat tabel utama: TipeKamar, Ruangan, Pasien, dan Booking.
+- Relasi antara tabel TipeKamar dan Kamar adalah one-to-many.
+- Relasi antara tabel Kamar dan Booking adalah one-to-many.
+- Relasi antara tabel Pasien dan Booking adalah one-to-many.
+
+2. Mekanisme Ketersediaan Kamar
+- Ketersediaan kamar berkurang saat pasien melakukan booking.
+- Ketersediaan kamar bertambah saat pasien checkout.
+
+3. Rancangan Relasi Tabel
+- Tabel TipeKamar menyimpan informasi jenis kamar.
+- Tabel Kamar menyimpan informasi kamar.
+- Tabel Pasien menyimpan informasi pasien.
+- Tabel Booking menyimpan informasi pemesanan kamar oleh pasien.
+
+4. Model dan Migration di Laravel
+- Buat migration untuk masing-masing tabel.
+- Definisikan struktur tabel pada migration.
+- Buat model dan definisikan relasi antar model.
+
+5. Migration ke Database MySQL
+- Jalankan perintah `php artisan migrate` untuk melakukan migration.
+
+Link Repository GitHub: [LINK_REPOSITORY]
